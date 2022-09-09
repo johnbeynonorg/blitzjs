@@ -7,7 +7,7 @@ services:
       blitz prisma generate &&
       blitz build &&
       blitz prisma migrate deploy
-    startCommand: blitz start
+    startCommand: yarn start
     envVars:
       - key: NODE_ENV
         value: production
