@@ -9,6 +9,8 @@ services:
       blitz prisma migrate deploy
     startCommand: yarn start
     envVars:
+      - key: NEW_VAR
+        value: test
       - key: NODE_ENV
         value: production
       - key: DATABASE_URL
